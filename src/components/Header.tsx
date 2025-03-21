@@ -21,6 +21,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SecurityIcon from '@mui/icons-material/Security';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import { alpha } from '@mui/material/styles';
 
 interface NavItem {
   label: string;
@@ -47,8 +48,8 @@ const Header: React.FC = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <SecurityIcon sx={{ mr: 1 }} />
+      <Typography variant="h6" sx={{ my: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', color: theme.palette.text.primary }}>
+        <SecurityIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
         LLM-SEC
       </Typography>
       <List>
@@ -72,7 +73,7 @@ const Header: React.FC = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="primary">
+      <AppBar position="static" color="default">
         <Container maxWidth="lg">
           <Toolbar>
             <Typography
@@ -83,12 +84,12 @@ const Header: React.FC = () => {
                 mr: 2,
                 display: 'flex',
                 alignItems: 'center',
-                color: 'white',
+                color: theme.palette.text.primary,
                 textDecoration: 'none',
                 flexGrow: isMobile ? 0 : 1,
               }}
             >
-              <SecurityIcon sx={{ mr: 1 }} />
+              <SecurityIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
               LLM-SEC
             </Typography>
 
@@ -97,10 +98,10 @@ const Header: React.FC = () => {
                 <Box sx={{ flexGrow: 1 }} />
                 <LanguageSwitcher />
                 <IconButton
-                  color="inherit"
                   aria-label="open drawer"
                   edge="end"
                   onClick={handleDrawerToggle}
+                  sx={{ color: theme.palette.text.primary }}
                 >
                   <MenuIcon />
                 </IconButton>
@@ -113,7 +114,13 @@ const Header: React.FC = () => {
                       key={item.translationKey}
                       component={RouterLink}
                       to={item.path}
-                      sx={{ color: 'white', mx: 1 }}
+                      sx={{ 
+                        color: theme.palette.text.primary, 
+                        mx: 1,
+                        '&:hover': {
+                          backgroundColor: alpha(theme.palette.primary.main, 0.08),
+                        }
+                      }}
                     >
                       {t(item.translationKey)}
                     </Button>

@@ -1,52 +1,60 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Box, Container, CssBaseline, ThemeProvider } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeProvider, Container, Box, CssBaseline } from '@mui/material';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ResearchPage from './pages/ResearchPage';
 import TeamPage from './pages/TeamPage';
 import ResourcesPage from './pages/ResourcesPage';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 import theme from './theme';
 import './App.css';
+import ParticleBackground from './components/ParticleBackground';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
+    <I18nextProvider i18n={i18n}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Box sx={{ 
-          display: 'flex', 
-          flexDirection: 'column', 
-          minHeight: '100vh',
+          minHeight: '100vh', 
           position: 'relative',
-          overflowX: 'hidden',
-          bgcolor: 'background.default'
+          background: theme.palette.background.default,
+          overflow: 'hidden'
         }}>
-          {/* 装饰性背景元素 */}
+          <ParticleBackground />
+          
           <div className="ai-decoration ai-decoration-1"></div>
           <div className="ai-decoration ai-decoration-2"></div>
           
-          <Header />
-          <Container component="main" sx={{ 
-            flexGrow: 1, 
-            py: { xs: 3, md: 5 }, 
-            px: { xs: 2, md: 3 },
-            position: 'relative',
-            zIndex: 1
+          <div className="tech-lines"></div>
+          <div className="scan-line"></div>
+          
+          <div className="data-stream data-stream-1"></div>
+          <div className="data-stream data-stream-2"></div>
+          <div className="data-stream data-stream-3"></div>
+          <div className="data-stream data-stream-4"></div>
+          
+          <Container maxWidth="lg" sx={{ 
+            position: 'relative', 
+            zIndex: 1,
+            py: 4
           }}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/research" element={<ResearchPage />} />
-              <Route path="/team" element={<TeamPage />} />
-              <Route path="/resources" element={<ResourcesPage />} />
-            </Routes>
+            <Router basename={process.env.PUBLIC_URL}>
+              <Header />
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/research" element={<ResearchPage />} />
+                <Route path="/team" element={<TeamPage />} />
+                <Route path="/resources" element={<ResourcesPage />} />
+              </Routes>
+            </Router>
           </Container>
-          <Footer />
         </Box>
-      </Router>
-    </ThemeProvider>
+      </ThemeProvider>
+    </I18nextProvider>
   );
-};
+}
 
 export default App;

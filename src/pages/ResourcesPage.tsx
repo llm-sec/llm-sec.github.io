@@ -91,11 +91,12 @@ const ResourcesPage: React.FC = () => {
       <Paper
         sx={{
           position: 'relative',
-          backgroundColor: 'primary.dark',
-          color: 'white',
+          background: 'linear-gradient(135deg, #F5C6AA 0%, #FFDBCC 100%)',
+          color: '#5A4F48',
           mb: 4,
           py: 6,
           borderRadius: 0,
+          boxShadow: '0 8px 32px rgba(245, 198, 170, 0.3)',
         }}
       >
         <Container maxWidth="lg">
@@ -238,6 +239,17 @@ const ResourcesPage: React.FC = () => {
           rel="noopener noreferrer"
           startIcon={<GitHubIcon />}
           size="large"
+          sx={{
+            background: 'linear-gradient(135deg, #F5C6AA 0%, #FFDBCC 100%)',
+            color: '#5A4F48',
+            boxShadow: '0 4px 14px rgba(245, 198, 170, 0.25)',
+            '&:hover': {
+              background: 'linear-gradient(135deg, #FFDBCC 0%, #F5C6AA 100%)',
+              boxShadow: '0 6px 20px rgba(245, 198, 170, 0.35)',
+              transform: 'translateY(-3px)'
+            },
+            transition: 'all 0.3s ease',
+          }}
         >
           {t('resources.visitGitHub')}
         </Button>
