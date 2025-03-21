@@ -1,0 +1,204 @@
+{
+  "common": {
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "contact": "联系我们",
+    "getInvolved": "参与其中",
+    "viewOn": "在GitHub上查看"
+  },
+  "nav": {
+    "home": "首页",
+    "research": "研究",
+    "publications": "出版物",
+    "team": "团队",
+    "resources": "资源",
+    "contact": "联系"
+  },
+  "home": {
+    "heroTitle": "LLM-SEC",
+    "heroSubtitle": "致力于推进大型语言模型安全研究的非营利组织",
+    "researchButton": "我们的研究",
+    "getInvolvedButton": "参与其中",
+    "missionTitle": "我们的使命",
+    "missionText": "LLM-SEC致力于研究和解决大型语言模型中的安全挑战。我们的目标是开发稳健的框架、工具和最佳实践，以构建安全可靠的AI系统。",
+    "featuresSection": {
+      "securityResearch": {
+        "title": "安全研究",
+        "description": "调查大型语言模型中的漏洞和攻击向量。"
+      },
+      "publications": {
+        "title": "出版物",
+        "description": "通过同行评审的论文与研究社区分享我们的发现。"
+      },
+      "collaboration": {
+        "title": "合作",
+        "description": "与研究人员、组织和行业伙伴合作，提高大型语言模型安全性。"
+      },
+      "resources": {
+        "title": "资源",
+        "description": "为社区提供教育资源和工具。"
+      }
+    },
+    "recentResearchTitle": "最近研究",
+    "researchTopics": {
+      "promptInjection": {
+        "title": "提示注入攻击",
+        "description": "研究恶意提示如何操纵大型语言模型行为，并开发防御机制。"
+      },
+      "dataPrivacy": {
+        "title": "大型语言模型中的数据隐私",
+        "description": "探索防止大型语言模型记忆敏感信息的方法。"
+      },
+      "secureDeployment": {
+        "title": "安全部署框架",
+        "description": "为生产环境中的大型语言模型安全集成开发最佳实践和工具。"
+      }
+    },
+    "viewAllResearch": "查看所有研究",
+    "getInvolvedSection": {
+      "title": "参与其中",
+      "text1": "我们欢迎对大型语言模型安全充满热情的研究人员、工程师和组织的贡献。",
+      "text2": "无论您是想为我们的研究做贡献，参与我们的开源项目，还是在安全挑战上合作，我们都很乐意听取您的意见。",
+      "contactButton": "联系我们"
+    },
+    "stayUpdatedSection": {
+      "title": "保持更新",
+      "text": "在GitHub上关注我们，获取我们最新的研究和项目信息：",
+      "gitHubButton": "GitHub组织"
+    }
+  },
+  "research": {
+    "title": "我们的研究",
+    "subtitle": "通过严格的研究推进大型语言模型的安全",
+    "areasTitle": "当前研究领域",
+    "areasText": "我们的组织专注于大型语言模型安全研究的几个关键领域，以应对新兴威胁和漏洞。",
+    "areas": {
+      "promptInjection": {
+        "title": "提示注入和越狱攻击",
+        "description": "研究恶意用户如何精心设计输入来绕过大型语言模型中的内容过滤器和安全措施，并开发针对这些攻击的强大防御。"
+      },
+      "dataPrivacy": {
+        "title": "数据隐私和提取",
+        "description": "研究防止大型语言模型泄露其训练数据中的敏感信息的方法，并开发检测和防止此类提取的技术。"
+      },
+      "secureDeployment": {
+        "title": "安全部署框架",
+        "description": "为在生产环境中安全部署大型语言模型创建全面的框架和最佳实践，降低风险并确保合规性。"
+      }
+    },
+    "projectsTitle": "最新研究项目",
+    "projectsText": "我们正在进行的研究项目专注于解决大型语言模型开发和部署中的关键安全挑战。",
+    "projects": {
+      "adversarialPrompting": {
+        "title": "针对对抗性提示的强大防御",
+        "status": "进行中 • 2023-2024",
+        "description": "这项研究专注于开发和评估对抗性提示攻击的防御机制。我们正在研究不同的保障机制如何应对不断演变的攻击技术，并创建新方法以提高大型语言模型的稳健性。"
+      },
+      "privacyPreserving": {
+        "title": "隐私保护的大型语言模型训练技术",
+        "status": "进行中 • 2023-2024",
+        "description": "该项目探索了在保留训练数据中敏感信息隐私的同时训练大型语言模型的方法。我们正在开发技术以限制对私人信息的记忆，同时保持模型性能和效用。"
+      }
+    }
+  },
+  "publications": {
+    "title": "出版物",
+    "subtitle": "我们对大型语言模型安全的研究贡献",
+    "papersTitle": "研究论文",
+    "papersText": "以下是我们发表的关于大型语言模型安全的研究论文集合。",
+    "papers": {
+      "privacy": {
+        "title": "量化和缓解语言模型中的隐私风险",
+        "venue": "安全与隐私会议2024年会议记录",
+        "description": "本文引入了衡量大型语言模型隐私泄露的新指标，并提出了一种减少敏感信息暴露风险而不影响模型性能的新方法。",
+        "authors": "Jane Smith, John Doe, Michael Johnson"
+      },
+      "defenses": {
+        "title": "针对对抗性提示攻击的强大防御",
+        "venue": "国际机器学习会议2023",
+        "description": "本研究对不同的对抗性提示攻击向量进行了全面分析，并引入了一个新的防御框架，该框架显著降低了此类攻击的成功率，同时保留了大型语言模型的实用性。",
+        "authors": "Robert Chen, Lisa Wong, David Miller"
+      },
+      "deployment": {
+        "title": "大型语言模型的安全部署实践",
+        "venue": "AI安全期刊2023",
+        "description": "本文概述了一个全面的框架，用于在生产环境中安全部署大型语言模型，解决了与提示注入、数据提取和未授权访问相关的挑战。",
+        "authors": "Sarah Johnson, Alex Rodriguez, Emily Taylor"
+      }
+    },
+    "reportsTitle": "技术报告",
+    "reportsText": "我们的技术报告提供了对大型语言模型安全主题的深入分析和实用指导。",
+    "reports": {
+      "jailbreaking": {
+        "title": "商业大型语言模型越狱技术调查",
+        "id": "技术报告 2023-01",
+        "description": "对商业大型语言模型已知越狱技术的全面调查，包括有效性评估和推荐的缓解策略。"
+      },
+      "redTeam": {
+        "title": "大型语言模型系统红队测试的最佳实践",
+        "id": "技术报告 2023-02",
+        "description": "对大型语言模型系统进行有效红队测试的指南和方法，以在部署前识别漏洞。"
+      }
+    }
+  },
+  "team": {
+    "title": "我们的团队",
+    "subtitle": "致力于推进大型语言模型安全的专业研究人员和工程师",
+    "meetTitle": "认识我们的团队",
+    "meetText": "我们的团队由安全研究人员、AI工程师和领域专家组成，致力于提高大型语言模型的安全性和可靠性。",
+    "joinTitle": "加入我们的团队",
+    "joinText": "我们一直在寻找对大型语言模型安全感兴趣的热情研究人员和工程师加入我们的团队。如果您有兴趣为我们的使命做贡献，请通过我们的联系页面与我们联系。"
+  },
+  "resources": {
+    "title": "资源",
+    "subtitle": "大型语言模型安全研究的工具、指南和出版物",
+    "toolsTitle": "开源工具",
+    "toolsText": "我们开发和维护一系列开源工具，帮助研究人员和从业者测试、评估和提高大型语言模型的安全性。",
+    "guidesTitle": "指南与最佳实践",
+    "guidesText": "我们的指南为保护大型语言模型实施和防止常见安全问题提供实用建议。",
+    "papersTitle": "研究论文",
+    "papersText": "关于大型语言模型安全研究的学术出版物和技术报告。",
+    "readGuide": "阅读指南",
+    "readPaper": "阅读论文",
+    "moreResourcesTitle": "寻找更多资源？",
+    "moreResourcesText": "查看我们的GitHub组织，获取所有开源项目和研究库。",
+    "visitGitHub": "访问我们的GitHub"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们的团队取得联系",
+    "formTitle": "给我们发送消息",
+    "formText": "对我们的研究有疑问，对合作感兴趣，或想了解更多关于大型语言模型安全的信息？填写下面的表格，我们会尽快回复您。",
+    "formFields": {
+      "name": "您的姓名",
+      "email": "电子邮件地址",
+      "subject": "主题",
+      "message": "消息"
+    },
+    "sendButton": "发送消息",
+    "successMessage": "您的消息已发送！我们会尽快回复您。",
+    "errorMessage": "发送消息时出错。请重试。",
+    "connectTitle": "其他联系方式",
+    "connectText": "更喜欢通过其他渠道联系？以下是与我们联系的其他方式。",
+    "github": {
+      "title": "GitHub",
+      "text": "在GitHub上关注我们的组织，获取我们最新的项目和研究。",
+      "button": "访问GitHub"
+    },
+    "email": {
+      "title": "电子邮件",
+      "text": "对于特定的询问或合作，您可以直接发送电子邮件给我们。"
+    },
+    "community": {
+      "title": "社区",
+      "text": "加入我们的微信社区群组，讨论大型语言模型安全。",
+      "wechatText": "扫描二维码或添加我们的微信ID加入："
+    }
+  },
+  "footer": {
+    "description": "致力于研究和改进大型语言模型安全的非营利组织。",
+    "quickLinks": "快捷链接",
+    "connect": "联系",
+    "copyright": "© {year} LLM-SEC。保留所有权利。"
+  }
+} 

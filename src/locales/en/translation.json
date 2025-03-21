@@ -1,0 +1,204 @@
+{
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "contact": "Contact Us",
+    "getInvolved": "Get Involved",
+    "viewOn": "View on GitHub"
+  },
+  "nav": {
+    "home": "Home",
+    "research": "Research",
+    "publications": "Publications",
+    "team": "Team",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "LLM-SEC",
+    "heroSubtitle": "A non-profit organization dedicated to advancing LLM security research",
+    "researchButton": "Our Research",
+    "getInvolvedButton": "Get Involved",
+    "missionTitle": "Our Mission",
+    "missionText": "LLM-SEC is committed to researching and addressing security challenges in large language models. We aim to develop robust frameworks, tools, and best practices for building secure and trustworthy AI systems.",
+    "featuresSection": {
+      "securityResearch": {
+        "title": "Security Research",
+        "description": "Investigating vulnerabilities and attack vectors in large language models."
+      },
+      "publications": {
+        "title": "Publications",
+        "description": "Sharing our findings with the research community through peer-reviewed papers."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working with researchers, organizations, and industry partners to improve LLM security."
+      },
+      "resources": {
+        "title": "Resources",
+        "description": "Providing educational resources and tools for the community."
+      }
+    },
+    "recentResearchTitle": "Recent Research",
+    "researchTopics": {
+      "promptInjection": {
+        "title": "Prompt Injection Attacks",
+        "description": "Investigating how malicious prompts can manipulate LLM behavior and developing defense mechanisms."
+      },
+      "dataPrivacy": {
+        "title": "Data Privacy in LLMs",
+        "description": "Exploring methods to prevent memorization of sensitive information in large language models."
+      },
+      "secureDeployment": {
+        "title": "Secure Deployment Frameworks",
+        "description": "Developing best practices and tools for secure integration of LLMs in production environments."
+      }
+    },
+    "viewAllResearch": "View All Research",
+    "getInvolvedSection": {
+      "title": "Get Involved",
+      "text1": "We welcome contributions from researchers, engineers, and organizations passionate about LLM security.",
+      "text2": "Whether you want to contribute to our research, participate in our open-source projects, or collaborate on security challenges, we'd love to hear from you.",
+      "contactButton": "Contact Us"
+    },
+    "stayUpdatedSection": {
+      "title": "Stay Updated",
+      "text": "Follow us on GitHub to stay updated with our latest research and projects:",
+      "gitHubButton": "GitHub Organization"
+    }
+  },
+  "research": {
+    "title": "Our Research",
+    "subtitle": "Advancing the security of large language models through rigorous research",
+    "areasTitle": "Current Research Areas",
+    "areasText": "Our organization focuses on several key areas of LLM security research to address emerging threats and vulnerabilities.",
+    "areas": {
+      "promptInjection": {
+        "title": "Prompt Injection & Jailbreaking",
+        "description": "Researching how malicious users can craft inputs to bypass content filters and security measures in LLMs, and developing robust defenses against these attacks."
+      },
+      "dataPrivacy": {
+        "title": "Data Privacy & Extraction",
+        "description": "Investigating methods to prevent LLMs from leaking sensitive information present in their training data, and developing techniques to detect and prevent such extraction."
+      },
+      "secureDeployment": {
+        "title": "Secure Deployment Frameworks",
+        "description": "Creating comprehensive frameworks and best practices for securely deploying LLMs in production environments, reducing risk and ensuring compliance."
+      }
+    },
+    "projectsTitle": "Latest Research Projects",
+    "projectsText": "Our ongoing research projects focus on addressing critical security challenges in the development and deployment of large language models.",
+    "projects": {
+      "adversarialPrompting": {
+        "title": "Robust Defenses Against Adversarial Prompting",
+        "status": "In progress • 2023-2024",
+        "description": "This research focuses on developing and evaluating defense mechanisms against adversarial prompt attacks. We're investigating how different safeguarding mechanisms perform against evolving attack techniques and creating new methods to improve LLM robustness."
+      },
+      "privacyPreserving": {
+        "title": "Privacy-Preserving LLM Training Techniques",
+        "status": "In progress • 2023-2024",
+        "description": "This project explores methods to train large language models while preserving the privacy of sensitive information in the training data. We're developing techniques to limit memorization of private information while maintaining model performance and utility."
+      }
+    }
+  },
+  "publications": {
+    "title": "Publications",
+    "subtitle": "Our research contributions to LLM security",
+    "papersTitle": "Research Papers",
+    "papersText": "Below is a collection of our published research papers focused on large language model security.",
+    "papers": {
+      "privacy": {
+        "title": "Quantifying and Mitigating Privacy Risks in Language Models",
+        "venue": "Proceedings of Security & Privacy Conference 2024",
+        "description": "This paper introduces new metrics for measuring privacy leakage in large language models and proposes a novel approach to reducing the risk of sensitive information exposure without compromising model performance.",
+        "authors": "Jane Smith, John Doe, Michael Johnson"
+      },
+      "defenses": {
+        "title": "Robust Defenses Against Adversarial Prompt Attacks",
+        "venue": "International Conference on Machine Learning 2023",
+        "description": "This research presents a comprehensive analysis of different adversarial prompt attack vectors and introduces a novel defense framework that significantly reduces the success rate of such attacks while preserving the utility of LLMs.",
+        "authors": "Robert Chen, Lisa Wong, David Miller"
+      },
+      "deployment": {
+        "title": "Secure Deployment Practices for Large Language Models",
+        "venue": "Journal of AI Security 2023",
+        "description": "This paper outlines a comprehensive framework for securely deploying large language models in production environments, addressing challenges related to prompt injection, data extraction, and unauthorized access.",
+        "authors": "Sarah Johnson, Alex Rodriguez, Emily Taylor"
+      }
+    },
+    "reportsTitle": "Technical Reports",
+    "reportsText": "Our technical reports provide in-depth analysis and practical guidance on LLM security topics.",
+    "reports": {
+      "jailbreaking": {
+        "title": "Survey of Jailbreaking Techniques for Commercial LLMs",
+        "id": "Technical Report 2023-01",
+        "description": "A comprehensive survey of known jailbreaking techniques for commercial large language models, including effectiveness evaluations and recommended mitigation strategies."
+      },
+      "redTeam": {
+        "title": "Best Practices for Red-Team Testing of LLM Systems",
+        "id": "Technical Report 2023-02",
+        "description": "Guidelines and methodologies for effective red-team testing of large language model systems to identify vulnerabilities before deployment."
+      }
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Dedicated researchers and engineers working to advance LLM security",
+    "meetTitle": "Meet Our Team",
+    "meetText": "Our team consists of security researchers, AI engineers, and domain experts committed to improving the security and safety of large language models.",
+    "joinTitle": "Join Our Team",
+    "joinText": "We're always looking for passionate researchers and engineers interested in LLM security to join our team. If you're interested in contributing to our mission, please reach out to us through our contact page."
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Tools, guides, and publications for LLM security research",
+    "toolsTitle": "Open Source Tools",
+    "toolsText": "We develop and maintain a range of open-source tools to help researchers and practitioners test, evaluate, and improve the security of large language models.",
+    "guidesTitle": "Guides & Best Practices",
+    "guidesText": "Our guides provide practical advice for securing LLM implementations and preventing common security issues.",
+    "papersTitle": "Research Papers",
+    "papersText": "Academic publications and technical reports on LLM security research.",
+    "readGuide": "Read Guide",
+    "readPaper": "Read Paper",
+    "moreResourcesTitle": "Looking for more resources?",
+    "moreResourcesText": "Check out our GitHub organization for all our open-source projects and research repositories.",
+    "visitGitHub": "Visit Our GitHub"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "formTitle": "Send Us a Message",
+    "formText": "Have questions about our research, interested in collaboration, or want to learn more about LLM security? Fill out the form below and we'll get back to you as soon as possible.",
+    "formFields": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "sendButton": "Send Message",
+    "successMessage": "Your message has been sent! We will get back to you soon.",
+    "errorMessage": "There was an error sending your message. Please try again.",
+    "connectTitle": "Other Ways to Connect",
+    "connectText": "Prefer to connect through other channels? Here are additional ways to get in touch with us.",
+    "github": {
+      "title": "GitHub",
+      "text": "Follow our organization on GitHub to stay updated with our latest projects and research.",
+      "button": "Visit GitHub"
+    },
+    "email": {
+      "title": "Email",
+      "text": "For specific inquiries or collaborations, you can email us directly."
+    },
+    "community": {
+      "title": "Community",
+      "text": "Join our WeChat community group for discussions about LLM security.",
+      "wechatText": "Scan the QR code or add our WeChat ID to join: "
+    }
+  },
+  "footer": {
+    "description": "A non-profit organization dedicated to researching and improving large language model security.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "© {year} LLM-SEC. All rights reserved."
+  }
+} 
