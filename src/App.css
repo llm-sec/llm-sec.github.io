@@ -1,21 +1,121 @@
+/* 全局样式 */
 .App {
   text-align: center;
 }
 
+/* 基础部分样式 */
 .section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
 }
 
+/* 英雄区域样式 */
 .hero-section {
-  background: linear-gradient(135deg, #000051 0%, #1a237e 100%);
+  background: linear-gradient(135deg, #3742fa 0%, #3a416f 100%);
   color: white;
   padding: 3rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* 卡片网格布局 */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+}
+
+/* 现代化元素 */
+.gradient-text {
+  background: linear-gradient(90deg, #3742fa, #00cec9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* AI风格装饰元素 */
+.ai-decoration {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 0.1;
+  filter: blur(40px);
+}
+
+.ai-decoration-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #3742fa 0%, #00cec9 100%);
+  top: -150px;
+  right: -100px;
+}
+
+.ai-decoration-2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #00cec9 0%, #3742fa 100%);
+  bottom: -100px;
+  left: -50px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .ai-decoration-1, .ai-decoration-2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* 现代化滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }
