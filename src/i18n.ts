@@ -3,9 +3,19 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-http-backend';
 
-// Check if we're in a GitHub Pages environment
-const isGitHubPages = window.location.hostname.includes('github.io');
-const basePath = isGitHubPages ? '/llm-sec.github.io' : '';
+// 确定当前环境的基础路径
+const getBasePath = () => {
+  // 是否在GitHub Pages环境
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  
+  if (isGitHubPages) {
+    // GitHub Pages使用仓库名作为基础路径
+    return '';
+  }
+  
+  // 本地开发环境
+  return '';
+};
 
 i18n
   // Use backend to load translations from /public/locales
@@ -37,8 +47,8 @@ i18n
     },
 
     backend: {
-      // Path to load translations from, adjusted for GitHub Pages
-      loadPath: `${basePath}/locales/{{lng}}/translation.json`,
+      // Path to load translations from
+      loadPath: '/locales/{{lng}}/translation.json',
     },
     
     react: {
